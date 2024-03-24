@@ -1,0 +1,307 @@
+/* General Notes */
+/* 
+** Use a "#" for calling an id and use a "." for calling a class
+** id has to be unique whereas there can be multiple classes under different id
+*/
+
+
+/* CORE STYLE STARTS */
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN STYLING */
+html, body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.7em;
+}
+element.style {
+  height: 3000px;
+}
+a{
+    color:#333;
+    text-decoration: none; 
+}
+
+h1,h2,h3 {
+    padding-bottom: 20px;
+}
+p {
+    margin: 10px;
+}
+/* CORE STYLE ENDS */
+
+/* UTILITY CLASSES */
+/* container added, so when the page extends, content in the navbar don't come out and only the background increases */
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+/* MENU */
+/* Inside the box each dish has been divided into 3 div, "product-dialog1" is the image, "product-dialog2" is the text and the price and "product-dialog3" is the add to cart button*/
+.menu-dialog {
+  margin: 5px;
+  padding: 25px;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 20px;
+  /* width: 150px; */
+  width: 35%;
+}
+.menu-dialog img {
+  border-radius: 5px;
+    width: 150px;
+    height: 100%;
+}
+
+.product-dialog1{ /* Product Image */ 
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-dialog2{ /* Product Content */
+    width: 60%;
+    text-align: left;
+    padding: 30px 10px 10px 10px;
+    font-size: xx-large;
+    font-family: inherit;
+    color: white;
+}
+
+.product-dialog3{ /* Add to cart btton */
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-dialog button {
+    margin-top: 80%;
+    width: 100%;
+    height: 25%;
+    border-radius: 7px;
+    background-color: bisque;
+    font-size: inherit;
+    font-weight: 800;
+}
+
+/* NAVBAR */
+/* Targeting the entire navbar */
+#navbar{
+    background: #fab23f;
+    color: #fff;
+    overflow: auto;
+}
+
+/* Targeting the Hyperlinks in the navbar */
+#navbar a { 
+    color: #fff;
+}
+
+/* Targeting the h1 in the navbar */
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+/* Targeting the ul in the navbar */
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+/* Targeting the ul in the li in the navbar */
+#navbar ul li {
+    float: left;
+}
+
+/* Targeting the Hyperlinks in the ul in li in the navbar */
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Targeting the Hyperlinks in the ul in li in the navbar to make it hover*/
+#navbar ul li a:hover, 
+#navbar ul li a.current{
+    background: #fab13f;
+    color: #fff;
+}
+
+/* SHOWCASE */
+#showcase{
+    background: #444;
+    height: 600px;
+}
+
+/* Targeting the content inside the container */
+#showcase .showcase-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+.box {
+    align-content: center;
+}
+
+/* LOGIN PAGE SPECIAL FORMATING*/
+
+/*For the text "Maadi" use Pattaya*/
+/*For the text "LOGIN" use Athiti*/
+/*For the small texts in the page use Montserrat*/
+
+/*Login Box - Design*/
+.box {
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #eae0cc;
+  text-align: center;
+}
+
+.box {
+  align-content: center
+}
+
+/*Login Box - "LOGIN" text design*/
+.box h1 {
+  color: #747474;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Username and Password Design*/
+.box input[type="username"], .box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ed7f07;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #747474;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+/*Username field (Focus) - When clicked on the username field, the border color of the username field changes to a different color*/
+.box input[type="text"]:focus, .box input[type="username"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+/*Password field (Focus) - When clicked on the password field, the border color of the password field changes to a different color*/
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+/*Login Button - Design*/
+.login_button {
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 15px 60px;
+  outline: none;
+  color: #747474;
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #2ecc71;
+  transition: ease-out 0.3s;
+}
+
+/*Login Button - Hover*/
+.login_button:hover {
+  box-shadow: inset 160px 0 0 0 #2ecc71;
+}
+
+/* SIGN UP PAGE SPECIAL FORMATING*/
+
+.wrapper{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #4070f4;
+}
+
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #0e4bf1;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+

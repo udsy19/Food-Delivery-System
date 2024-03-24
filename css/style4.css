@@ -1,0 +1,856 @@
+/* General Notes */
+/* 
+** Use a "#" for calling an id and use a "." for calling a class
+** id has to be unique whereas there can be multiple classes under different id
+*/
+
+
+/* CORE STYLE STARTS */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN STYLING */
+html,
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.7em;
+}
+
+element.style {
+    height: 3000px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px;
+}
+
+/* CORE STYLE ENDS */
+
+/* UTILITY CLASSES */
+/* Container added, so when the page extends, content in the navbar don't come out and only the background increases */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0px 20px;
+}
+
+/* SLIDESHOW */
+.image-container img{
+width: 200px;
+height: 350px;
+}
+.slider-frame, .slider-frame-1, .slider-frame-2, .slider-frame-3, .slider-frame-4{
+    float: left;
+    padding-right: 10px;
+}
+
+/* MENU */
+/* Inside the box each dish has been divided into 3 div, "product-dialog1" is the image, "product-dialog2" is the text and the price and "product-dialog3" is the add to cart button*/
+.menu-dialog {
+    margin: 5px;
+    padding: 25px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 75%;
+}
+
+.menu-dialog img {
+    border-radius: 5px;
+    width: 150px;
+    height: 100%;
+}
+
+.product-dialog1 {
+    /* Product Image */
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-dialog2 {
+    /* Product Content */
+    width: 60%;
+    text-align: left;
+    padding: 30px 10px 10px 10px;
+    font-size: xx-large;
+    font-family: inherit;
+    color: white;
+}
+
+.product-dialog3 {
+    /* Add to cart btton */
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-dialog button {
+    margin-top: 80%;
+    width: 100%;
+    height: 25%;
+    border-radius: 7px;
+    background-color: bisque;
+    font-size: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.add-to-cart-parent{
+    margin: 20px;
+}
+
+.add-to-cart-child1 {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px
+}
+
+.empty-button{
+padding: 5px 10px;
+border: 1px solid red;
+border-radius: 3px;
+    margin: 1% 0% 0% 93%;
+color: red;
+}
+
+/* MENU TABLE */
+.cart-item-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* NAVBAR */
+/* Targeting the entire navbar */
+#navbar {
+    background: #fab23f;
+    color: #fff;
+    overflow: auto;
+    padding: 1%;
+    font-size: large;
+}
+
+/* Targeting the Hyperlinks in the navbar */
+#navbar a {
+    color: #fff;
+}
+
+/* Targeting the h1 in the navbar */
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+/* Targeting the ul in the navbar */
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+/* Targeting the ul in the li in the navbar */
+#navbar ul li {
+    float: left;
+}
+
+/* Targeting the Hyperlinks in the ul in li in the navbar */
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Targeting the Hyperlinks in the ul in li in the navbar to make it hover*/
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #f7a52f;
+    color: #fff;
+}
+
+/* SHOWCASE */
+#showcase {
+    background: #444;
+    height: 600px;
+}
+
+/* Targeting the content inside the container */
+#showcase .showcase-content {
+    color: #fff;
+    padding-top: 100px;
+    text-align: left;
+}
+
+.box {
+    align-content: center;
+}
+
+
+/* LOGIN PAGE SPECIAL FORMATING*/
+
+/*For the text "Maadi" use Pattaya*/
+/*For the text "LOGIN" use Athiti*/
+/*For the small texts in the page use Montserrat*/
+
+/*Login Box - Design*/
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eae0cc;
+    text-align: center;
+}
+
+.box {
+    align-content: center
+}
+
+/* Feedback Page */
+.feedback_map_parent{
+    width: 100%;
+}
+.feedback-container{
+    width: 30%;
+    float: left;
+}
+
+
+#feedback_input_name,
+#feedback_input_email {
+    padding: 0.5%;
+}
+
+.feedback_name_input,
+.feedback_comments_input,
+.feedback_email_input,
+.feedback_submit_button{
+    text-align: center;
+}
+
+#feedback_submit_button{
+margin-left:auto;
+margin-right:auto;
+display:block;
+margin: top 22%;;
+margin: bottom 0%;
+background-color: #4CAF50;
+/* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+/* display: inline-block; */
+font-size: 16px;
+}
+
+
+/* Location */
+.location{
+    float: left;
+    width: 30%;
+}
+/*Login Box - "LOGIN" text design*/
+.box h1 {
+    color: #747474;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Username and Password Design*/
+.box input[type="username"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ed7f07;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: #747474;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+/*Username field (Focus) - When clicked on the username field, the border color of the username field changes to a different color*/
+.box input[type="text"]:focus,
+.box input[type="username"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+/*Password field (Focus) - When clicked on the password field, the border color of the password field changes to a different color*/
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+/*Login Button - Design*/
+.login_button {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 15px 60px;
+    outline: none;
+    color: #747474;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #2ecc71;
+    transition: ease-out 0.3s;
+}
+
+/*Login Button - Hover*/
+.login_button:hover {
+    box-shadow: inset 160px 0 0 0 #2ecc71;
+}
+
+/* SIGN UP PAGE SPECIAL FORMATING*/
+
+.wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper form {
+    margin-top: 30px;
+}
+
+.wrapper form .input-box {
+    height: 52px;
+    margin: 18px 0;
+}
+
+form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #4070f4;
+}
+
+form h3 {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.input-box.button input {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #4070f4;
+    cursor: pointer;
+}
+
+.input-box.button input:hover {
+    background: #0e4bf1;
+}
+
+form .text h3 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+form .text h3 a {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+form .text h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Menu Page - Check Login Page [Red Box] */
+
+.login_first{
+     text-align: center;
+     font-size: 20px;
+     background: red;
+     color: white;
+     padding: 15px;
+     margin: 20px 35%;
+}
+.place-order{
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin: 1% 0% 0% 93%;
+    color: red;
+}
+/* Checkout Info Page */
+
+.left-container .input-box input{
+    padding: 0.5%;
+}
+.left-container .input-box label {
+}
+
+.parent-container{
+        width: 100%;
+        display: flex;
+        padding: 5% 10%;
+    }
+
+.left-container, .right-container{
+    width: 50%;
+}
+.right-container .display_order, .display_product_h_total{
+    width: 100%;
+}
+.right-container .display_order #product_display,
+#product_display_h {
+    width: 70%;
+}
+.right-container .display_order #product_total,
+#product_total_h {
+    width: 30%;
+}
+.right-container .display_order #product_quantity {
+    /* width: 5%; */
+}
+.right-container .display_order #product_total2 {
+    width: 25%;
+}
+
+.display_product_h_total, .product_info, .product_name, .product_subtotal, .product_shipping, .product_overall_total, #product_display_h, #product_total_h{
+    display: flex;
+}
+.right-container .product_display h2{
+
+}
+
+.right-container{
+    border: 1px groove rgba(219, 216, 216, 0.5);
+        padding: 4%;
+margin-left: 10%
+}
+
+#product_total,
+#product_total2,
+#product_quantity,
+#product_total_h {
+    text-align: center;
+}
+.product_info, .product_subtotal, .product_shipping, .product_overall_total{
+    border: 1px groove rgba(219, 216, 216, 0.5);
+}
+
+.right-container #product_display{
+    padding: 1%;
+}
+.payment_choice {
+    padding-top: 5%;
+}
+
+.payment_choice .cod, .online_payment{
+    margin: 10px;
+    padding: 10px 10px;
+    border: 1px groove rgba(219, 216, 216, 0.5);    
+}
+
+/* MY ORDER PAGE */
+.myorder_container{
+padding: 5%;
+}
+.myorder_parent{
+    width: 100%;
+    display: flex;
+    /* padding: 3%; */
+}
+.myorder_parent .order_id {
+    width: 10%;
+}
+.myorder_parent .order_date{
+    width: 10%;
+}
+
+.myorder_parent .order_id1 {
+    width: 10%;
+}
+
+.myorder_parent .order_date1 {
+    width: 10%;
+}
+.myorder_parent .products_ordered,
+.products_ordered1 {
+    width: 70%;
+}
+.myorder_parent .total{
+    width: 10%;
+}
+.myorder_parent .total1 {
+    width: 10%;
+}
+.order_id, .order_date, .products_ordered, .total{
+    border: 1px groove rgba(219, 216, 216, 0.5);
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.order_id1,
+.order_date1,
+.products_ordered1,
+.total1 {
+border: 1px groove rgba(219, 216, 216, 0.5);
+text-align: center;
+/* padding: px 0px; */
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+padding: 10px; 
+border:1px groove rgba(219, 216, 216, 0.5);
+border-collapse: none;
+}
+
+.td_odd{
+    width: 80%;
+}
+
+.td_even {
+    width: 20%;
+}
+/* ADMIN DASHBOARD */
+.myorder_container {
+    padding: 5%;
+}
+.myorder_parent {
+    width: 100%;
+    display: flex;
+    /* padding: 3%; */
+}
+.myorder_parent .order_id {
+    width: 10%;
+}
+.myorder_parent .order_date {
+    width: 10%;
+}
+.myorder_parent .order_id1 {
+    width: 10%;
+}
+.myorder_parent .order_date1 {
+    width: 10%;
+}
+.myorder_parent .products_ordered,
+.products_ordered1 {
+    width: 55%;
+}
+.order_name{
+    width: 15%;
+}
+.myorder_parent .total {
+    width: 10%;
+}
+.myorder_parent .total1 {
+    width: 10%;
+}
+.order_id,
+.order_date,
+.products_ordered,
+.order_name,
+.total {
+    border: 1px groove rgba(219, 216, 216, 0.5);
+    text-align: center;
+    padding: 15px 0px;
+}
+.order_id1,
+.order_date1,
+.products_ordered1,
+.total1,
+.order_name1 {
+    border: 1px groove rgba(219, 216, 216, 0.5);
+    text-align: center;
+}
+
+.order_name1 {
+    width: 15%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.td {
+    padding: 10px;
+    border: 1px groove rgba(219, 216, 216, 0.5);
+    border-collapse: none;
+}
+
+.td_odd {
+    width: 80%;
+}
+
+.td_even {
+    width: 20%;
+}
+.current_time #time{
+    text-align: center;
+    margin-top: 3%;
+}
+.price_change_container{
+    padding: 3%;
+}
+.parent_container {
+    border-style: groove;
+    padding: 1%;
+    width: 100%;
+}
+.parent_container p{
+    border-style: groove;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+}
+.parent_container .products_display {
+    border-style: groove;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+    /* width: 50%; */
+}
+.parent_container .product_name{
+    border-style: groove;
+    width: 20%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.parent_container .product_id {
+    border-style: groove;
+    width: 10%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.parent_container .product_price {
+    border-style: groove;
+    width: 10%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+.parent_container .product_variety {
+    border-style: groove;
+    width: 10%;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+}
+
+.edit_input_name {
+        display: flex;
+        padding: 1%;
+        margin: 1%;
+}
+.edit_input_name input{
+    padding: 1%;
+}
+.edit_input_id {
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+}
+
+.edit_input_id input {
+    padding: 1%;
+}
+.edit_submit{
+    padding-top: 1%;
+}
+.edit_input{
+    width: 10%;
+}
+.edit_submit input{
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+/* MODAL */
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-contents {
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 4px;
+}
+.feedback_display
+{
+display: flex;
+margin: 1% 5% 0% 5%;
+}
+
+.feedback_form{
+    width: 100%;
+    padding: 1%;
+    /* border-style: groove; */
+}
+
+.feedback_name{
+    width: 20%;
+    padding: 1%;
+    border-style: groove;
+
+}
+.feedback_email{
+    width: 20%;
+    padding: 1%;
+    border-style: groove;
+}
+.feedback_comment{
+    width: 60%;
+    padding: 1%;
+    border-style: groove;
+    text-align: center;
+
+}
+
+.feedback_name h1, .feedback_email h1, .feedback_comment h1{
+    padding: 1%;
+    font-size: larger;
+    font-weight: bold;
+}
+.about_page {
+    width: 100%;
+    background-color: #f7a52f;
+    display: flex;
+
+}
+
+.left_div {
+    width: 50%;
+}
+
+.right_div {
+    width: 50%;
+}
+
+.about_page img {
+    width: 100%;
+    height: 50%;
+}
+
+.about_textbox {
+    margin: 30% 40px 0% 15%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+.about_textbox span {
+    margin: 10% 0% 0% -10%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-style: italic;
+
+}
+
+.about_textbox p {
+    margin: 10% 20% 0% -10%;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+   #testimonials {
+       height: 600px;
+       background: url("../image_resources/test-bg.jpg") no-repeat center center/cover;
+       padding-top: 100px;
+   }
+
+   #testimonials h2 {
+       color: #fff;
+       text-align: center;
+       padding-bottom: 40px;
+   }
+
+   #testimonials .testimonial {
+       padding: 20px;
+       margin-bottom: 40px;
+       border-radius: 5px;
+       opacity: 0.9;
+   }
+
+   #testimonials .testimonial img {
+       width: 100px;
+       float: left;
+       margin-right: 20px;
+       border-radius: 50%;
+   }
